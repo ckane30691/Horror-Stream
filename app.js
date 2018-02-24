@@ -1,11 +1,11 @@
 const express = require('express');
 const mustacheExpress = require('mustache-express');
-const config = require('./config');
 const passport = require('passport');
-const token = require('./token');
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const config = require('./config');
+const token = require('./authentication/token');
 
 require('./authentication/jwt');
 require('./authentication/google');
