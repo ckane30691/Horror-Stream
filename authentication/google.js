@@ -8,3 +8,18 @@ const passportConfig = {
     clientSecret: config.get('authentication.google.clientSecret'),
     callbackURL: 'https://node-react-test1.herokuapp.com/api/authentication/google/redirect'
 };
+
+if (passportConfig.clientID) {
+    passport.use(new passportGoogle.OAuth2Strategy(passportConfig,
+      function (request, accessToken, refreshToken, profile, done) {
+        let user = users.getUserByExternalId('google', profile.id);
+        if (!user) {
+            user = users.createUser(
+              profile.displayName,
+              'google',
+              profile.id
+            );
+        }
+        return done(null, user);
+    }));
+}
