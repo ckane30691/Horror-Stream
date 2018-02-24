@@ -6,7 +6,7 @@ const users = require('./users');
 const passportConfig = {
     clientID: config.get('authentication.google.clientId'),
     clientSecret: config.get('authentication.google.clientSecret'),
-    callbackURL: 'https://node-react-test1.herokuapp.com/api/authentication/google/redirect'
+    callbackURL: 'http://localhost:3000/api/authentication/google/redirect'
 };
 
 if (passportConfig.clientID) {
