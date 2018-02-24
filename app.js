@@ -34,6 +34,9 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 
+//folder to serve static view and pop-up
+app.use(express.static('static_pages'));
+
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Request-Headers", "*");
