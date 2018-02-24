@@ -114,3 +114,8 @@ function generateUserToken(req, res) {
       token: accessToken
     });
 }
+
+const port = config.get('http.port');
+app.listen(port, () => {
+    console.log('Server listening on port ' + port);
+});
