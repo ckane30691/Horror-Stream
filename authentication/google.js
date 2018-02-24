@@ -1,7 +1,7 @@
 const passport = require('passport');
 const passportGoogle = require('passport-google-oauth');
 const config = require('../config');
-const users = require('../users');
+const users = require('./users');
 
 const passportConfig = {
     clientID: config.get('authentication.google.clientId'),
