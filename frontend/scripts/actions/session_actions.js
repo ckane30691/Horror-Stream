@@ -3,10 +3,10 @@ export const RECEIVE_SESSION_ERRORS = "RECEIVE_SESSION_ERRORS";
 export const CLEAR_SESSION_ERRORS = "CLEAR_SESSION_ERRORS";
 //Get current user(me) from token in localStorage
 export const ME_FROM_TOKEN = 'ME_FROM_TOKEN';
-export const ME_FROM_TOKEN_FAILURE = 'ME_FROM_TOKEN_FAILURE';
-export const RESET_TOKEN = 'RESET_TOKEN';
 
-const ROOT_URL = location.href.indexOf('localhost') > 0 ? 'http://localhost:3000/api' : '/api';
+const ROOT_URL = location.href.indexOf('localhost') > 0 ?
+  'http://localhost:3000/api'
+  : '/api';
 
 export const receiveCurrentUser = currentUser => ({
   type: RECEIVE_CURRENT_USER,

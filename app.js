@@ -13,7 +13,10 @@ require('./authentication/google');
 // Make sure env_variables are set
 if (!process.env.JWT_SECRET || !process.env.CLIENT_ID ||
   !process.env.CLIENT_SECRET) {
-  console.error('ERROR!: Please set JWT_SECRET before running the app. \n run: export JWT_SECRET=<some secret string> to set JWTSecret. ');
+  console.error(
+    'ERROR!: Please set JWT_SECRET before running the app. \n',
+    ' run: export JWT_SECRET=<some secret string> to set JWTSecret. '
+  );
   process.exit();
 }
 
@@ -47,6 +50,7 @@ app.use(function(req, res, next) {
   next();
 });
 
+// middleware to check for token
 app.use(function(req, res, next) {
   // check header or url parameters or post parameters for token
   let token = req.headers['authorization'];
