@@ -16,3 +16,9 @@ if (!process.env.JWT_SECRET || !process.env.CLIENT_ID ||
   console.error('ERROR!: Please set JWT_SECRET before running the app. \n run: export JWT_SECRET=<some secret string> to set JWTSecret. ');
   process.exit();
 }
+
+const app = express();
+
+app.engine('html', mustacheExpress());
+app.set('view engine', 'mustache');
+app.set('views', __dirname + '/static_pages');
