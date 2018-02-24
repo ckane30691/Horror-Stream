@@ -1,0 +1,7 @@
+/node_modules
+env_variables.js
+npm-debug.log
+.DS_Store
+/*.env
+bundle.js
+bundle.js.map
