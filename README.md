@@ -32,6 +32,8 @@ If you find a bug, please open an issue [here](https://github.com/ckane30691/Hor
 * [AWS S3 Buckets](https://aws.amazon.com/s3/) - Cloud Service for serving images
 * [PassportJS](http://www.passportjs.org/) - Simple, unobtrusive authentication for Node.js
 
+NOTE: I have only used express in two previous projects so it is still somewhat new to me
+
 ## Future Directions for HorrorStream
 * Implement Reviews
 * Implement User Profiles
