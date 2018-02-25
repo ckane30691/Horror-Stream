@@ -9,6 +9,17 @@ const token = require('./authentication/token');
 
 require('./authentication/jwt');
 require('./authentication/google');
+// Generate the Token for the user authenticated in the request
+function generateUserToken(req, res) {
+    const accessToken = token.generateAccessToken(req.user.id);
+    let user = JSON.stringify(req.user);
+    res.render('authenticated.html', {
+      user: {
+        user
+      },
+      token: accessToken
+    });
+}
 
 // Make sure env_variables are set
 if (!process.env.JWT_SECRET || !process.env.CLIENT_ID ||
@@ -114,18 +125,6 @@ app.get('/api/me/from/token', function(req, res, next) {
     });
   });
 });
-
-// Generate the Token for the user authenticated in the request
-function generateUserToken(req, res) {
-    const accessToken = token.generateAccessToken(req.user.id);
-    let user = JSON.stringify(req.user);
-    res.render('authenticated.html', {
-      user: {
-        user
-      },
-      token: accessToken
-    });
-}
 
 const port = config.get('http.port');
 app.listen(port, () => {
