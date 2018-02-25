@@ -73,8 +73,8 @@ app.use(function(req, res, next) {
 });
 
 // favicon
-let favicon = require('serve-favicon');
-app.use('/favicon.ico', express.static('/favicon.ico'));
+// let favicon = require('serve-favicon');
+// app.use('/favicon.ico', express.static('/favicon.ico'));
 
 app.get('*.js', function (req, res, next) {
   req.url = req.url + '.gz';
