@@ -29,11 +29,11 @@ const config = convict({
             },
             issuer: {
                 doc: 'The issuer for the JWT',
-                default: 'live-nature-stream'
+                default: 'live-horror-stream'
             },
             audience: {
                 doc: 'The audience for the JWT',
-                default: 'live-nature-stream'
+                default: 'live-horror-stream'
             }
         }
     }

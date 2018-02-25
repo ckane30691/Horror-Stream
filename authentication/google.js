@@ -6,7 +6,7 @@ const users = require('./users');
 const passportConfig = {
     clientID: config.get('authentication.google.clientId'),
     clientSecret: config.get('authentication.google.clientSecret'),
-    callbackURL: 'https://horror-stream.herokuapp.com/api/authentication/google/redirect'
+    callbackURL: 'https://horrorstream.herokuapp.com/api/authentication/google/redirect'
 };
 
 if (passportConfig.clientID) {
