@@ -21,13 +21,13 @@ class Stream extends React.Component {
           allowFullScreen>
         </iframe>
         </div>
-        <div className="card">  
+        <div className="card">
         <iframe
           className="chat"
           allowFullScreen=""
           frameBorder="0"
           height="270"
-          src="https://www.youtube.com/embed/XQficmAci9k"
+          src="https://www.youtube.com/live_chat?v=XQficmAci9k&embed_domain=horror-stream.herokuapp.com"
           width="480">
         </iframe>
         </div>
