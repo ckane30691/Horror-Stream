@@ -27,7 +27,7 @@ class Stream extends React.Component {
           allowFullScreen=""
           frameBorder="0"
           height="270"
-          src="https://www.youtube.com/live_chat?v=XQficmAci9k&embed_domain=horror-stream.herokuapp.com"
+          src="https://www.youtube.com/live_chat?v=XQficmAci9k&embed_domain=horrorstream.herokuapp.com"
           width="480">
         </iframe>
         </div>
