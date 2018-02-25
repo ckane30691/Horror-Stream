@@ -3,12 +3,11 @@ import React from 'react';
 const Splash = () => (
 	<div className='splash'>
 		<div className="hero-img-container">
-			<img className="hero-img" alt="hero image"
-        src="https://s3.amazonaws.com/horror-stream/Screen+Shot+2018-02-24+at+3.30.18+PM.png"/>
+			<img className="hero-img" alt="hero image" src="https://s3.amazonaws.com/horror-stream/Screen+Shot+2018-02-24+at+3.30.18+PM.png"/>
 		</div>
 
 			<div className="intro-container">
-				<h1 className="intro-title">Welcome to the live stream</h1>
+				<h1 className="intro-title">The Scariest Stream Online</h1>
 
 				<p className="intro-body">
 					Watch a harrowing gamer play through all the latest survival horror titles live,
@@ -19,8 +18,9 @@ const Splash = () => (
 
 
 			<div className="splash-signup">
+				<h2>Curious yet?</h2>
 				<div className="call-to-action">
-					<h3>Watch us play the latest titles: <span id="arrow">⟶</span></h3>
+					<h3>See us play the latest titles: </h3>
 
 					<ul>
 						<li><span>✓</span>Resident Evil 7</li>

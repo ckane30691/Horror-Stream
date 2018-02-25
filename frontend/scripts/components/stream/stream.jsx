@@ -8,9 +8,11 @@ class Stream extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Tune in!</h1>
+      <div className="stream-body">
+
+        <div className="card">
         <iframe
+          className="stream"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/XQficmAci9k"
@@ -18,14 +20,17 @@ class Stream extends React.Component {
           allow="autoplay; encrypted-media"
           allowFullScreen>
         </iframe>
-
+        </div>
+        <div className="card">  
         <iframe
+          className="chat"
           allowFullScreen=""
           frameBorder="0"
           height="270"
           src="https://www.youtube.com/embed/XQficmAci9k"
           width="480">
         </iframe>
+        </div>
       </div>
     );
   }

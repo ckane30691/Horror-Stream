@@ -58,5 +58,195 @@
  /*////*/
 
  body {
-  background-color: red;
+  font-family: 'Comfortaa', cursive;
+  background-color: #f5efe6;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header {
+  letter-spacing: -0.05rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: rgba(251,248,245,1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 65px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 1;
+  box-sizing: border-box;
+ }
+
+ .home-container {
+  display: flex;
+  align-items: center;
+}
+
+ .icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+ }
+
+ .login-signup {
+  background-color: #007bb6;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.50em 0.8em 0.50em 0.8em;
+  border-radius: 3em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+}
+
+.hero-img-container {
+  /* margin-top: 65px; */
+  margin: auto;
+ }
+
+ .hero-img {
+  max-width: 100%;
+ }
+
+ .intro-container {
+
+	 color: rgb(40,40,40);
+	 text-align: center;
+ }
+
+ .intro-title {
+  font-family: 'Nanum Brush Script', cursive;
+  font-weight: bold;
+  font-size: 3.0rem;
+  margin-bottom: 15px;
+}
+
+.intro-body {
+  font-size: 1.0rem;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.splash {
+  /* padding-left: 200px;
+  padding-right: 200px; */
+}
+
+
+ span {
+   font-size: 25px;
+   margin-right: 5px;
+   color: red;
+ }
+
+.feature-header {
+  font-size: 1.3em;
+  color: #283c46;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  align-self: center;
+}
+
+ .splash-signup {
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* padding-top: 20px; */
+ }
+
+ .splash-signup h2 {
+   font-family: 'Nanum Brush Script', cursive;
+   font-size: 2.5em;
+   margin-right: 20px;
+ }
+
+ .call-to-action {
+   align-self: center;
+   color: #283c46;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-bottom: 20px;
+   box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+   /* margin-top: -30px; */
+   background-color: white;
+ }
+
+.call-to-action h3 {
+ width: 100%;
+}
+
+.call-to-action span {
+ font-size: 1.3em;
+ font-weight: bold;
+}
+
+#arrow {
+  font-size: 1.5em;
+}
+
+.call-to-action ul {
+ font-size: .8em;
+ color: #283c46;
+ font-weight: bold;
+}
+
+/* STREAM STYLING */
+
+.header-group {
+  font-family: helvetica;
+  font-size: .75em;
+  color: rgb(6,27,37);
+  position: relative;
+}
+
+.header-name {
+  margin-right: 110px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.header-button {
+ background-color: rgb(227,127,50);
+ color: #fff;
+ width: 60px;
+ font-size: .7em;
+ font-weight: bold;
+ text-align: center;
+ padding: 0.50em .5em 0.50em .5em;
+ border-radius: 0.2em;
+ border: 1px solid #bfbfbf;
+ border-bottom-width: 2px;
+ border-color: rgba(0,0,0,0.15);
+ transition: all 0.2s ease;
+ position: absolute;
+ right: 20px;
+ top:0px;
+}
+
+.stream-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 100px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
 }

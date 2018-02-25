@@ -6,7 +6,7 @@ const sessionLinks = (login) => (
     <button
       id="google"
       onClick={() => login('google')}>
-      Authenticate with Google+
+      Login with Google+
     </button>
 	</nav>
 );
