@@ -24,7 +24,7 @@ const app = express();
 
 app.engine('html', mustacheExpress());
 app.set('view engine', 'mustache');
-app.set('views', __dirname + '/static_pages');
+app.set('views', __dirname + 'static_pages');
 
 //middleware config
 app.use(passport.initialize());
@@ -38,6 +38,7 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 
 //folder to serve static view and pop-up
+app.use("/styles", express.static(__dirname + "/frontend/styles"));
 app.use(express.static('static_pages'));
 
 app.use(function(req, res, next) {
